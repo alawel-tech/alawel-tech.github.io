@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+#rocket-banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Adjust width as needed */
+    background-color: #000000;
+}
+
+#rocket-banner img {
+    width: 100%; /* Adjust width to fit the container */
+    height: auto;
+}
+
+#header-content {
+    margin-left: 120px; /* Adjust to ensure content is not hidden by the rocket */
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+#countdown {
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#days, #hours, #minutes, #seconds {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#gallery {
+    margin-top: 20px;
+}
+
+#image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#image-gallery img {
+    max-width: 200px;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Base styles for carousel container */
+.slick-carousel {
+    width: 100%; /* Adjust as needed */
+}
+
+/* Styles for individual slides */
+.slick-slide {
+    margin: 0 10px; /* Space between slides */
+}
+
+.slick-slide img {
+    width: 100%; /* Make sure images fill their container */
+    height: auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+/* Position and style the navigation dots */
+.slick-dots {
+    bottom: -30px; /* Adjust position as needed */
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px; /* Adjust size if needed */
+    color: #333; /* Color of the navigation arrows */
+    z-index: 1; /* Ensure arrows are above the carousel */
+}
+
+.slick-prev {
+    left: 10px; /* Adjust position as needed */
+}
+
+.slick-next {
+    right: 10px; /* Adjust position as needed */
+}
