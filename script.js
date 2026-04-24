@@ -1,12 +1,11 @@
 $(document).ready(function() {
-    // Countdown Timer
     function updateCountdown() {
         const now = new Date();
-        const launchDate = new Date('2024-12-31T23:59:59');
+        const launchDate = new Date('2025-06-30T00:00:00');
         const timeDiff = launchDate - now;
 
         if (timeDiff <= 0) {
-            $('#timer').text('We are now open!');
+            $('#countdown').html('<h2>We Are Live!</h2>');
             return;
         }
 
@@ -22,26 +21,10 @@ $(document).ready(function() {
     }
 
     setInterval(updateCountdown, 1000);
+    updateCountdown();
 
-    // Image Gallery
-    const images = [
-        'images/repair1.jpg',
-        'images/repair2.jpg',
-        'images/repair3.jpg'
-    ];
-
-    // Append images to carousel
-    images.forEach(function(image) {
-        $('#image-carousel').append(`<div><img src="${image}" alt="Service Image"></div>`);
-    });
-
-    // Initialize Slick Carousel
-    $('#image-carousel').slick({
-        infinite: true,          // Allows continuous scrolling
-        slidesToShow: 3,         // Number of slides to show at once
-        slidesToScroll: 1,       // Number of slides to scroll at a time
-        autoplay: false,         // Disables autoplay
-        arrows: true,            // Shows previous/next arrows
-        dots: true               // Shows navigation dots
+    $('.contact-btn').on('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'mailto:info@alaweltech.com?subject=Alawel Tech Inquiry';
     });
 });

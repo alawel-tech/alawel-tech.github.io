@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Alawel Tech Store</title>
+    <title>Alawel Tech Store | Computer & Mobile Repairs</title>
+    <meta name="description" content="Alawel Tech Store - Your one-stop shop for Computer and Mobile repairs and sales. Coming soon!">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -13,36 +14,74 @@
 </head>
 <body>
     <header>
-        <div id="rocket-banner">
-            <img src="images/rocket.png" alt="Rocket">
-        </div>
-        <div id="header-content">
-            <h1>Alawel Tech Store</h1>
-            <p>Your one-stop shop for Computer/Mobile repairs and sales!</p>
+        <div class="header-container">
+            <div class="logo">AT</div>
+            <div class="header-content">
+                <h1>Alawel Tech Store</h1>
+                <p>Expert Computer & Mobile Repairs & Sales</p>
+            </div>
         </div>
     </header>
 
     <main>
         <section id="countdown">
-            <h2>Coming Soon!</h2>
+            <h2>Launching Soon</h2>
             <div id="timer">
-                <div id="days">00</div> Days
-                <div id="hours">00</div> Hours
-                <div id="minutes">00</div> Minutes
-                <div id="seconds">00</div> Seconds
+                <div class="time-unit">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="time-unit">
+                    <span id="hours">00</span>
+                    <label>Hours</label>
+                </div>
+                <div class="time-unit">
+                    <span id="minutes">00</span>
+                    <label>Minutes</label>
+                </div>
+                <div class="time-unit">
+                    <span id="seconds">00</span>
+                    <label>Seconds</label>
+                </div>
             </div>
         </section>
 
         <section id="gallery">
-            <h2>Check Out Our Services</h2>
-            <div id="image-carousel" class="slick-carousel">
-                <!-- Images will be loaded here by jQuery -->
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/repair1.jpg" alt="Phone Repair">
+                    <div class="service-card-content">
+                        <h3>Mobile Repair</h3>
+                        <p>Screen replacements, battery changes, and all mobile device repairs with genuine parts.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/repair2.jpg" alt="Computer Repair">
+                    <div class="service-card-content">
+                        <h3>Computer Repair</h3>
+                        <p>Laptop and desktop repairs, hardware upgrades, and system maintenance.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/repair3.jpg" alt="Sales">
+                    <div class="service-card-content">
+                        <h3>Device Sales</h3>
+                        <p>Latest smartphones, laptops, and accessories at competitive prices.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Get In Touch</h2>
+            <p>Have questions? Contact us for a free consultation!</p>
+            <a href="mailto:ahmadiesa@gmail.com" class="contact-btn">Contact Us</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Alawel Tech Store. All rights reserved.</p>
+        <p>&copy; 2026 Alawel Tech Store. All rights reserved.</p>
     </footer>
 </body>
 </html>
